@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'boteket';
+  src: url('../fonts/fontello/boteket.eot?25161246');
+  src: url('../fonts/fontello/boteket.eot?25161246#iefix') format('embedded-opentype'),
+       url('../fonts/fontello/boteket.woff2?25161246') format('woff2'),
+       url('../fonts/fontello/boteket.woff?25161246') format('woff'),
+       url('../fonts/fontello/boteket.ttf?25161246') format('truetype'),
+       url('../fonts/fontello/boteket.svg?25161246#boteket') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'boteket';
+    src: url('../font/boteket.svg?25161246#boteket') format('svg');
+  }
+}
+*/
+ 
+ [class^="bot-icon-"]:before, [class*=" bot-icon-"]:before {
+  font-family: "boteket";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.bot-icon-database:before { content: '\e800'; } /* '' */
+.bot-icon-bell:before { content: '\e801'; } /* '' */
+.bot-icon-trash-empty:before { content: '\e802'; } /* '' */
+.bot-icon-credit-card:before { content: '\e803'; } /* '' */
+.bot-icon-user-outline:before { content: '\e804'; } /* '' */
+.bot-icon-cog-outline:before { content: '\e805'; } /* '' */
+.bot-icon-facebook:before { content: '\e806'; } /* '' */
+.bot-icon-down-up:before { content: '\e807'; } /* '' */
+.bot-icon-down-arrow:before { content: '\e808'; } /* '' */
+.bot-icon-double-right-arrow:before { content: '\e809'; } /* '' */
+.bot-icon-double-left-arrow:before { content: '\e80a'; } /* '' */
+.bot-icon-document:before { content: '\e80b'; } /* '' */
+.bot-icon-check:before { content: '\e80c'; } /* '' */
+.bot-icon-right-arrow:before { content: '\e80d'; } /* '' */
+.bot-icon-navigate:before { content: '\e80e'; } /* '' */
+.bot-icon-mail:before { content: '\e80f'; } /* '' */
+.bot-icon-location:before { content: '\e810'; } /* '' */
+.bot-icon-line-heart:before { content: '\e811'; } /* '' */
+.bot-icon-left-arrow:before { content: '\e812'; } /* '' */
+.bot-icon-home:before { content: '\e813'; } /* '' */
+.bot-icon-heart:before { content: '\e814'; } /* '' */
+.bot-icon-pencil:before { content: '\e815'; } /* '' */
+.bot-icon-block:before { content: '\e816'; } /* '' */
+.bot-icon-ok-circled:before { content: '\e817'; } /* '' */
+.bot-icon-location-1:before { content: '\e818'; } /* '' */
+.bot-icon-circle:before { content: '\f111'; } /* '' */
+.bot-icon-dot-circled:before { content: '\f192'; } /* '' */
+.bot-icon-bank:before { content: '\f19c'; } /* '' */
+.bot-icon-facebook-official:before { content: '\f230'; } /* '' */
+.bot-icon-industry:before { content: '\f275'; } /* '' */
+.bot-icon-map-o:before { content: '\f278'; } /* '' */
+.bot-icon-map:before { content: '\f279'; } /* '' */
