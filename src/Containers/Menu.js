@@ -36,30 +36,30 @@ class Menu extends React.Component {
                             <li className="col-sm-4">
                                 <ul>
                                     <li className="dropdown-header">JS with ES6</li>
-                                    <li><Link to="/default-parameter">Default Parameter</Link></li>
-                                    <li><Link to="/template-literals">Template Literals</Link></li>
-                                    <li><Link to="/destructuring">Destructuring</Link></li>
-                                    <li><Link to="/object-literals">Object Literals</Link></li>
-                                    <li><Link to="/arrow-functions">Arrow Functions</Link></li>
-                                    <li><Link to="/promises">Promises</Link></li>
-                                    <li><Link to="/classes">Classes</Link></li>
+                                    <li><Link to="/default-parameter" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Default Parameter</Link></li>
+                                    <li><Link to="/template-literals" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Template Literals</Link></li>
+                                    <li><Link to="/destructuring" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Destructuring</Link></li>
+                                    <li><Link to="/object-literals" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Object Literals</Link></li>
+                                    <li><Link to="/arrow-functions" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Arrow Functions</Link></li>
+                                    <li><Link to="/promises" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Promises</Link></li>
+                                    <li><Link to="/classes" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Classes</Link></li>
                                 </ul>
                             </li>
                             <li className="col-sm-4">
                                 <ul>
                                     <li className="dropdown-header">Components</li>
-                                    <li><Link to="/functional-component">Functional Component</Link></li>
-                                    <li><Link to="/class-component">Class Component</Link></li>
-                                    <li><Link to="/component-lifecycle">Lifecycle</Link></li>
-                                    <li><Link to="/props">Props</Link></li>
-                                    <li><Link to="/state">State</Link></li>
+                                    <li><Link to="/functional-component" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Functional Component</Link></li>
+                                    <li><Link to="/class-component" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Class Component</Link></li>
+                                    <li><Link to="/component-lifecycle" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Lifecycle</Link></li>
+                                    <li><Link to="/props" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Props</Link></li>
+                                    <li><Link to="/state" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>State</Link></li>
                                 </ul>
                             </li>
                             <li className="col-sm-4">
                                 <ul>
                                     <li className="dropdown-header">Forms</li>
-                                    <li><Link to="/form-example">Basic example</Link></li>
-                                    <li><Link to="/handling-events">Handling Events</Link></li>
+                                    <li><Link to="/form-example" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Basic example</Link></li>
+                                    <li><Link to="/handling-events" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Handling Events</Link></li>
                                 </ul>
                             </li>
                         </ul>

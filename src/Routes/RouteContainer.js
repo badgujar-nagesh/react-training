@@ -1,7 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../Views/Home';
-import DefaultParameter from '../Views/DefaultParameter'
+import DefaultParameter from '../Views/DefaultParameter';
+import TemplateLiteral from '../Views/TemplateLiteral';
+import Destructuring from '../Views/Destructuring';
+import ArrowFunction from '../Views/ArrowFunction';
+import FunctionComponent from '../Views/FunctionComponent';
+import ClassComponent from '../Views/ClassComponent';
+import LifeCycle from '../Views/LifeCycle';
+import Form from '../Views/Form';
 
 function RouteContainer() {
     return (
@@ -9,21 +16,19 @@ function RouteContainer() {
             <div className="row">
                 <div className="col-sm-12">
                     <Switch>
+                        <Route path='/default-parameter' component={DefaultParameter} />
+                        <Route path='/template-literals' component={TemplateLiteral} />
+                        <Route path='/destructuring' component={Destructuring} />
+                        <Route path='/arrow-functions' component={ArrowFunction} />
+                        <Route path='/promises' component={ArrowFunction} />
+                        <Route path='/classes' component={ArrowFunction} />
+                        <Route path='/functional-component' component={FunctionComponent} />
+                        <Route path='/class-component' component={ClassComponent} />
+                        <Route path='/component-lifecycle' component={LifeCycle} />
+                        <Route path='/props' component={ClassComponent} />
+                        <Route path='/state' component={LifeCycle} />
+                        <Route path='/form-example' component={Form} />
                         <Route path='/' component={Home} />
-                        <Route path='/default-parameter' component={Home} />
-                        <Route path='/template-literals' component={DefaultParameter} />
-                        <Route path='/destructuring' component={DefaultParameter} />
-                        <Route path='/object-literals' component={DefaultParameter} />
-                        <Route path='/arrow-functions' component={DefaultParameter} />
-                        <Route path='/promises' component={DefaultParameter} />
-                        <Route path='/classes' component={DefaultParameter} />
-                        <Route path='/functional-component' component={DefaultParameter} />
-                        <Route path='/class-component' component={DefaultParameter} />
-                        <Route path='/component-lifecycle' component={DefaultParameter} />
-                        <Route path='/props' component={DefaultParameter} />
-                        <Route path='/state' component={DefaultParameter} />
-                        <Route path='/form-example' component={DefaultParameter} />
-                        <Route path='/handling-events' component={DefaultParameter} />
                     </Switch>
                 </div>
             </div>

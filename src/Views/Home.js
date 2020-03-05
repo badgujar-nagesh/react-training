@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Home(props) {
+function Home() {
     return (<>
-        <span>Home Page</span>
+        <span>Hello World!</span>
     </>);
 }
 export default Home;
