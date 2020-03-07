@@ -15,6 +15,15 @@ class LifeCycle extends Component {
 
     submitForm = () => {
         console.log(this.state)
+        fetch('URL_HERE', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({...this.state}) })
+                .then(data => data.json)
+                .then(data => console.log(data))
     }
 
     render() {

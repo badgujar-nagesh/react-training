@@ -5,20 +5,18 @@ class LifeCycle extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "Netwin"
+            name: "This is Initial State"
         };
-    }
-
-    componentWillMount() {
-        console.log('Component Will Mount, It is UNSAFE method');
     }
 
     componentDidMount() {
         console.log('Component Did Mount');
-        this.setState({name: 'TCS'});
+        this.setState({name: 'This is State Updated!'});
     }
 
     componentDidUpdate(prevProps, prevState) {
+        console.log(prevProps);
+        console.log(prevState)
         console.log('Component Updated');
     }
 
@@ -33,9 +31,9 @@ class LifeCycle extends Component {
     render() {
         let { name } = this.state;
         return (
-            <div>
+            <h1>
                 {name}
-            </div>
+            </h1>
         );
     }    
 }

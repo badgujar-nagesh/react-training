@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
     return (<>
-        <span>Hello World!</span>
+        <h1>Hello World!</h1>
     </>);
 }
 export default Home;

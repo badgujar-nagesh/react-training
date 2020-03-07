@@ -9,6 +9,7 @@ import FunctionComponent from '../Views/FunctionComponent';
 import ClassComponent from '../Views/ClassComponent';
 import LifeCycle from '../Views/LifeCycle';
 import Form from '../Views/Form';
+import ListExample from '../Views/ListExample'
 
 function RouteContainer() {
     return (
@@ -28,6 +29,7 @@ function RouteContainer() {
                         <Route path='/props' component={ClassComponent} />
                         <Route path='/state' component={LifeCycle} />
                         <Route path='/form-example' component={Form} />
+                        <Route path='/list-example' component={ListExample} />
                         <Route path='/' component={Home} />
                     </Switch>
                 </div>

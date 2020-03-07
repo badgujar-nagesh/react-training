@@ -39,7 +39,6 @@ class Menu extends React.Component {
                                     <li><Link to="/default-parameter" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Default Parameter</Link></li>
                                     <li><Link to="/template-literals" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Template Literals</Link></li>
                                     <li><Link to="/destructuring" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Destructuring</Link></li>
-                                    <li><Link to="/object-literals" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Object Literals</Link></li>
                                     <li><Link to="/arrow-functions" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Arrow Functions</Link></li>
                                     <li><Link to="/promises" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Promises</Link></li>
                                     <li><Link to="/classes" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Classes</Link></li>
@@ -59,7 +58,7 @@ class Menu extends React.Component {
                                 <ul>
                                     <li className="dropdown-header">Forms</li>
                                     <li><Link to="/form-example" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Basic example</Link></li>
-                                    <li><Link to="/handling-events" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>Handling Events</Link></li>
+                                    <li><Link to="/list-example" onClick={() => this.setState({navCollapsed: !this.state.navCollapsed})}>List</Link></li>
                                 </ul>
                             </li>
                         </ul>
